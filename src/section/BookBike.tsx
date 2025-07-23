@@ -7,7 +7,7 @@ const BookBike = () => {
         <div className="flex flex-col-reverse py-[60px] lg:flex-row gap-10 h-full ">
           <BookingForm />
           <div >
-            <img data-aos="fade-rughtt" src="/images/booking/bike.png" alt="bike"
+            <img  src="/images/booking/bike.png" alt="bike"
               className="scale-x-[-1] lg:pt-[170px]  lg:absolute  w-1/2 lg:w-[624px] right-[4.1025641%] lg:right-5.55555556% xl:right-[13.0208333%] z-10 "
             />
           </div>

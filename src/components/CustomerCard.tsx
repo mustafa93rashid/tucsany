@@ -5,12 +5,11 @@ interface CustomerCardProps {
   image: string;
   name: string;
   desc: string;
-  aos?: string; 
 }
 
-const CustomerCard: React.FC<CustomerCardProps> = ({ image, name, desc, aos }) => {
+const CustomerCard: React.FC<CustomerCardProps> = ({ image, name, desc}) => {
   return (
-    <div data-aos={aos} data-aos-once="true" className='p-[50px] border border-[#EFEFEF] rounded-3xl flex flex-col gap-[38px]'>
+    <div   className='p-[50px] border border-[#EFEFEF] rounded-3xl flex flex-col gap-[38px]'>
       <div className='flex flex-col items-center gap-4 text-black01'>
         <Image src={image} alt="Customer" width={80} height={80} className="rounded-full" />
         <span className='text-lg'>{name}</span>

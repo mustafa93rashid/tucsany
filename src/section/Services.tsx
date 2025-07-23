@@ -11,7 +11,6 @@ const Services = () => {
             image={data.image}
             title={data.title}
             desc={data.desc}
-            aos={data.aos}
           />
         ))}
       </div>

@@ -4,12 +4,11 @@ interface ServicesCardProps {
   image: string;
   title: string;
   desc: string;
-  aos?: string;
 }
 
-const ServicesCard: React.FC<ServicesCardProps> = ({ image, title, desc, aos }) => {
+const ServicesCard: React.FC<ServicesCardProps> = ({ image, title, desc }) => {
   return (
-    <div data-aos={aos} className='flex flex-col gap-5 w-full lg:w-[330px]  '>
+    <div  className='flex flex-col gap-5 w-full lg:w-[330px]  '>
       <div className="overflow-hidden rounded-3xl ">
         <img src={image} alt={title} className='h-[302px] object-cover w-full  transform transition-transform duration-500 hover:scale-105' />
       </div>

@@ -12,7 +12,7 @@ type BookingField = {
 
 const BookingForm = () => {
   return (
-    <div data-aos="fade-right" className="flex flex-col items-center z-20">
+    <div  className="flex flex-col items-center z-20">
       <Title title="Book Now Bike" />
 
       <div className="bg-white/20 rounded-3xl p-[30px] w-full  lg:w-[734px] ">

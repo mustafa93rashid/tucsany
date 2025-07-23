@@ -5,13 +5,12 @@ type DestinantionsCardProps = {
     desc: string;
     title: string;
     Available: string;
-    aos?: string;
 };
 
-const DestinantionsCard: React.FC<DestinantionsCardProps> = ({ image, title, Available, person, desc, aos }) => {
+const DestinantionsCard: React.FC<DestinantionsCardProps> = ({ image, title, Available, person, desc }) => {
     return (
 
-        <div data-aos={aos} className='flex flex-col gap-4 w-full lg:w-[330px] '>
+        <div className='flex flex-col gap-4 w-full lg:w-[330px] '>
             <div className="overflow-hidden rounded-3xl">
                 <img src={image} alt={title}
                     className="h-[404px] w-full object-cover rounded-3xl transform transition-transform duration-500 hover:scale-105"

@@ -5,7 +5,6 @@ export const DestinantionsData = [
       Available: "EVERY DAY",
       person: "3-10 PP",
       desc: "A tour of the city and its surroundings led by a professional guide ...",
-      aos: "fade-up",
     },
     {
       image: "/images/destinations/2.png",
@@ -13,7 +12,6 @@ export const DestinantionsData = [
       Available: "MONDAY",
       person: "10-30 PP",
       desc: "The real magic is here where you can enjoy the best Tuscan wine and eat ...",
-            aos: "fade-down",
 
     },
         {
@@ -22,7 +20,6 @@ export const DestinantionsData = [
       Available: "TO BE DECIDED",
       person: "10-50 PP",
       desc: "Visiting the 5 Terre is a must, and you can never go there enough ...",
-            aos: "fade-up",
 
     },
             {
@@ -31,7 +28,6 @@ export const DestinantionsData = [
       Available: "TO BE DECIDED",
       person: "5-10 PP",
       desc: "Visit the beautiful Siena and the cities that surround it to experience ...",
-            aos: "fade-left",
 
     },
                 {

@@ -14,7 +14,7 @@ interface PackageCardProps {
 
 const PackageCard = ({ image, title, price, features }: PackageCardProps) => {
     return (
-        <div data-aos="flip-left" className="bg-white rounded-3xl shadow-[0px_0px_20px_0px_#0000001A] w-full lg:w-[340px] overflow-hidden transition-all duration-300 hover:shadow-[0px_10px_30px_0px_#00000030] hover:scale-[1.02]">
+        <div className="bg-white rounded-3xl shadow-[0px_0px_20px_0px_#0000001A] w-full lg:w-[340px] overflow-hidden transition-all duration-300 hover:shadow-[0px_10px_30px_0px_#00000030] hover:scale-[1.02]">
             <Image src={image} alt={title} width={400} height={300} className="w-full h-[340px] object-center lg:object-cover" />
             <div className="p-[25px] flex flex-col gap-4">
                 <div className="flex flex-col gap-4">

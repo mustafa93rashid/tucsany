@@ -16,7 +16,6 @@ const Destinantions = () => {
               Available={data.Available}
               person={data.person}
               desc={data.desc}
-              aos={data.aos}
             />
           ))}
         </Carousel>

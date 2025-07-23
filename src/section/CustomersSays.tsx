@@ -15,7 +15,6 @@ const CustomersSays = () => {
                 image={data.image}
                 name={data.name}
                 desc={data.desc}
-                aos={data.aos}
               />
             ))}
           </Carousel>

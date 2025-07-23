@@ -35,7 +35,7 @@ const Tabs = () => {
             <div className="bg-white xl:flex items-center rounded-tl-0 p-3 gap-4 rounded-b-lg rounded-tr-lg  rounded-tl-lg xl:rounded-tl-[0px] flex-wrap xl:flex-nowrap">
                 {filterFields.map((field) => (
 
-                    <div key={field.key} className="flex items-start gap-[7px] p-1 sm:py-4 sm:pl-4 sm:pr-[3.5px]">
+                    <div key={field.key} className="flex items-start gap-[7px] p-1 py-4 pl-4 sm:pr-[3.5px]">
                         <img src={field.icon} alt={`${field.label} Icon`} className="mt-1.5 w-5" />
 
                         <div className="flex flex-col  items-start  px-3 relative">
@@ -65,7 +65,6 @@ const Tabs = () => {
                                         <img
                                             src="/images/hero/tab/arrow-down.svg"
                                             alt="Search Icon"
-
                                         />
                                     </span>
                                 </div>
@@ -78,7 +77,7 @@ const Tabs = () => {
 
 
                 {/* Search Button */}
-                <button className="rounded-lg w-full xl:w-[80px] bg-orange p-3 sm:p-5 xl:ml-3   flex items-center justify-center cursor-pointer">
+                <button className="rounded-lg w-full xl:w-[80px] bg-orange p-2 sm:p-5 xl:ml-3   flex items-center justify-center cursor-pointer">
                     <img
                         src="/images/hero/tab/search.png"
                         alt="Search Icon"
