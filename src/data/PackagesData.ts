@@ -1,6 +1,6 @@
 export const PackagesData = [
   {
-    images: "/Images/packages/1.png",
+    images: "/images/packages/1.png",
     title: "BIKE / RICKSHAW",
     price: "10",
     features: [
@@ -23,7 +23,7 @@ export const PackagesData = [
     ],
   },
   {
-    images: "/Images/packages/2.png",
+    images: "/images/packages/2.png",
     title: "BIKE TOURS",
     price: "30",
     features: [
@@ -46,7 +46,7 @@ export const PackagesData = [
     ],
   },
   {
-    images: "/Images/packages/3.png",
+    images: "/images/packages/3.png",
     title: "PARK TOUR",
     price: "45",
     features: [
@@ -69,7 +69,7 @@ export const PackagesData = [
     ],
   },
   {
-    images: "/Images/packages/4.png",
+    images: "/images/packages/4.png",
     title: "TRANSFER",
     price: "10",
     features: [

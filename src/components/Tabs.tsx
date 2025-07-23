@@ -35,14 +35,14 @@ const Tabs = () => {
             <div className="bg-white xl:flex items-center rounded-tl-0 p-3 gap-4 rounded-b-lg rounded-tr-lg  rounded-tl-lg xl:rounded-tl-[0px] flex-wrap xl:flex-nowrap">
                 {filterFields.map((field) => (
 
-                    <div key={field.key} className="flex items-start gap-[7px] p-1 py-2 pl-4 sm:pr-[3.5px]">
+                    <div key={field.key} className="flex items-start gap-[7px] py-2 pl-4 sm:pr-[3.5px]">
                         <img src={field.icon} alt={`${field.label} Icon`} className="mt-1.5 w-5" />
 
-                        <div className="flex flex-col  items-start  px-3 relative">
-                            <label className="text-black01 text-sm sm:text-lg ">{field.label}</label>
+                        <div className="flex flex-col  text-start  px-4 relative">
+                            <label className="text-black01 text-sm sm:text-[17px] ">{field.label}</label>
                             {field.type === "select" && field.options && (
 
-                                <select className="text-black01/50 rounded-sm py-1 px-0  text-sm sm:text-lg">
+                                <select className="text-black01/50 rounded-sm py-1 ml-[-3px]  text-sm sm:text-lg">
                                     {field.options.map((option, index) => (
                                         <option key={index} >{option}</option>
                                     ))}
