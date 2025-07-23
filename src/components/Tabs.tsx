@@ -26,7 +26,7 @@ const Tabs = () => {
                             } ${activeTab === key ? "text-orange bg-white" : "text-white bg-white/40"}`}
                     >
                         <Icon />
-                        <span className="font-semibold text-sm sm:text-lg">{label}</span>
+                        <span className="font-semibold text-[12px] lg:text-lg">{label}</span>
                     </button>
                 ))}
             </div>
@@ -35,7 +35,7 @@ const Tabs = () => {
             <div className="bg-white xl:flex items-center rounded-tl-0 p-3 gap-4 rounded-b-lg rounded-tr-lg  rounded-tl-lg xl:rounded-tl-[0px] flex-wrap xl:flex-nowrap">
                 {filterFields.map((field) => (
 
-                    <div key={field.key} className="flex items-start gap-[7px] p-1 py-4 pl-4 sm:pr-[3.5px]">
+                    <div key={field.key} className="flex items-start gap-[7px] p-1 py-2 pl-4 sm:pr-[3.5px]">
                         <img src={field.icon} alt={`${field.label} Icon`} className="mt-1.5 w-5" />
 
                         <div className="flex flex-col  items-start  px-3 relative">
@@ -77,10 +77,11 @@ const Tabs = () => {
 
 
                 {/* Search Button */}
-                <button className="rounded-lg w-full xl:w-[80px] bg-orange p-2 sm:p-5 xl:ml-3   flex items-center justify-center cursor-pointer">
+                <button className="rounded-lg w-full xl:w-[80px] bg-orange p-2 lg:p-5 xl:ml-3   flex items-center justify-center cursor-pointer">
                     <img
                         src="/images/hero/tab/search.png"
                         alt="Search Icon"
+                        className="w-4 lg:w-fit"
 
                     />
                 </button>

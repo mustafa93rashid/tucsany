@@ -18,9 +18,9 @@ const Hero: React.FC<HeroProps> = ({ images, showContent }) => {
 
       {showContent ? (
         <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center space-y-4 mt-6 sm:mt-0' >
-          <h2 data-aos="fade-up"  className={`text-center text-4xl md:text-5xl lg:text-7xl ${podcast.variable}`} style={{ fontFamily: 'var(--font-podcast)' }}
+          <h2 data-aos="fade-up"  className={`text-center text-3xl md:text-5xl lg:text-7xl ${podcast.variable}`} style={{ fontFamily: 'var(--font-podcast)' }}
           >Enjoy in the best way!</h2>
-          <span data-aos="fade-down" className='text-xl font-bold'>Enjoy our services for your trip anytime</span>
+          <span data-aos="fade-down" className='text-lg font-bold'>Enjoy our services for your trip anytime</span>
           <Tabs />
 
         </div>
