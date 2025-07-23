@@ -1,6 +1,7 @@
 import Tabs from '@/components/Tabs';
 import React from 'react'
 import { podcast } from "@/app/fonts/Podcast";
+import Image from 'next/image';
 
 interface HeroProps {
   images: string;
@@ -9,17 +10,19 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ images, showContent }) => {
   return (
-    <div className='relative'>
-      <img
+<div className="relative w-full h-screen ">
+      <Image
         src={images}
         alt="Hero Image"
-        className="w-screen h-screen  object-cover"
+        fill
+        priority
+        className="object-cover"
       />
 
       {showContent ? (
         <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center space-y-4 mt-6 sm:mt-0' >
-          <h2 data-aos="fade-up"  className={`text-center text-3xl md:text-5xl lg:text-7xl ${podcast.variable}`} style={{ fontFamily: 'var(--font-podcast)' }}
-          >Enjoy in the best way!</h2>
+          <h1 data-aos="fade-up"  className={`text-center text-3xl md:text-5xl lg:text-7xl ${podcast.variable}`} style={{ fontFamily: 'var(--font-podcast)' }}
+          >Enjoy in the best way!</h1>
           <span data-aos="fade-down" className='text-lg font-bold'>Enjoy our services for your trip anytime</span>
           <Tabs />
 

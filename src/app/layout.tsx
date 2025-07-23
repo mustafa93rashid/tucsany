@@ -40,4 +40,3 @@ export default function RootLayout({
   );
 }
 
-// px-[4.1025641%] lg:px-[5.55555556%] xl:px-[13.0208333%]
