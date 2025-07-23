@@ -8,13 +8,14 @@ const ScrollToTopAnimate = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isRotating, setIsRotating] = useState(false);
 
-  useEffect(() => {
-    const toggleVisibility = () => {
-      setIsVisible(window.scrollY > 300);
-    };
-    window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
-  }, []);
+useEffect(() => {
+  const toggleVisibility = () => {
+    setIsVisible(window.scrollY > 300);
+  };
+  toggleVisibility(); 
+  window.addEventListener('scroll', toggleVisibility);
+  return () => window.removeEventListener('scroll', toggleVisibility);
+}, []);
 
   const handleScrollToTop = () => {
     setIsRotating(true);

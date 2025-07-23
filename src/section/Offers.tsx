@@ -13,7 +13,7 @@ const Offers = () => {
                     <p className="text-lg">
                         {OffersData[0].desc}
                     </p>
-                    <CustomButton label="Contact Us" />
+                    <CustomButton label="Contact Us" href="/contact" />
                 </div>
 
                 <Image

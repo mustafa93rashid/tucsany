@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { footerData } from "@/data/FooterData";
+import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -40,18 +41,20 @@ const Footer = () => {
 
                     {/* Home */}
                     <div>
-                        <h3 className="font-extrabold mb-5 text-[20px]">Home</h3>
-                        <ul className="flex flex-col gap-2.5">
-                            {footerData.Home.map((item, index) => (
-                                <li
-                                    key={index}
-                                    className="text-sm hover:text-orange cursor-pointer"
-                                >
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+  <h3 className="font-extrabold mb-5 text-[20px]">Home</h3>
+  <ul className="flex flex-col gap-2.5">
+    {footerData.Home.map((item, index) => (
+      <li key={index}>
+        <Link
+          href={item.href}
+          className="text-sm hover:text-orange cursor-pointer"
+        >
+          {item.label}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
 
                     {/* Help */}
                     <div>

@@ -2,8 +2,8 @@ import { Construction } from "lucide-react";
 
 const UnderConstruction = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-center px-6 py-16 bg-gray-400">
-      <Construction className="w-20 h-20 text-orange-500 mb-6 animate-bounce" />
+    <div className="flex flex-col items-center justify-center min-h-screen text-center px-6 py-16 bg-gray-400/50">
+      <Construction className="w-20 h-20 text-orange mb-6 animate-bounce" />
 
       <h1 className="text-4xl font-bold text-gray-800 mb-4">
         We Are Building This Page

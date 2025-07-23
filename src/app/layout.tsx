@@ -6,10 +6,12 @@ import Footer from "@/components/Footer";
 import HandleLoadingComponent from "@/components/HandleLoadingComponent";
 import AOSProvider from "@/utlis/AOSProvider";
 import ScrollToTop from "@/components/ScrollToTop";
+import ChatBot from "@/components/ChatBot";
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
   subsets: ["latin"],
+  
 });
 
 export const metadata: Metadata = {
@@ -24,21 +26,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${openSans.variable}  antialiased `}
-      >
-        {/* <HandleLoadingComponent> */}
-          <AOSProvider />
-          <NavBar />
-          <ScrollToTop />
-          {children}
-          <Footer />
-        {/* </HandleLoadingComponent> */}
-
+      <body className={`${openSans.variable}  antialiased `}>
+        <HandleLoadingComponent>
+        <AOSProvider />
+        <ChatBot />
+        <NavBar />
+        <ScrollToTop />
+        {children}
+        <Footer />
+        </HandleLoadingComponent>
       </body>
     </html>
   );
 }
-
 
 // px-[4.1025641%] lg:px-[5.55555556%] xl:px-[13.0208333%]

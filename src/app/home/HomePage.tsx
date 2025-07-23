@@ -1,4 +1,3 @@
-import ChatBot from "@/components/ChatBot";
 import { BestCompanyData } from "@/data/BestCompanyData";
 import BookBike from "@/section/BookBike";
 import CustomersSays from "@/section/CustomersSays";
@@ -12,10 +11,8 @@ import WelcomeToSite from "@/section/WelcomeToSite";
 const HomePage = () => {
   return (
     <>
-      <Hero images="/images/hero/1.jpg" showContent={true} />
+      <Hero images="/images/hero/1.webp" showContent={true} />
       <Destinantions />
-      <ChatBot />
-
       <WelcomeToSite
         data={BestCompanyData[0]}
         className="w-[300px] h-[500px] xl:w-[450px] xl:h-[650px]"

@@ -74,7 +74,7 @@ const ChatBot = () => {
       const fullResponse = data.response;
       let index = 0;
 
-      setTypingMessage(""); // start typing
+      setTypingMessage("");
 
       const typingInterval = setInterval(() => {
         setTypingMessage((prev) => (prev ?? "") + fullResponse.charAt(index));
@@ -95,7 +95,6 @@ const ChatBot = () => {
         }
       }, 30); // speed per character
     } catch (err) {
-      console.error("❌ Error:", err);
     } finally {
       setLoading(false);
     }

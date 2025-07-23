@@ -15,7 +15,11 @@ export const footerData = {
 "Transportation With Luxury Cars" ,
 "Wine Tours By Bus With Guide" ,
  ],
-  Home: ["Home", "About Us", "Tour Packages"],
+  Home: [
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "Tour Packages", href: "/tour" }
+],
 
   Help: ["Terms of Use", "Privacy Policy"],
 

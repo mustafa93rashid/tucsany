@@ -26,19 +26,19 @@ const Loader = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-white z-55">
+    <div className="fixed inset-0 flex items-center justify-center bg-white z-[99]">
       <div className="flex items-center justify-center gap-[10px] w-[250px] h-[250px]">
         <span
           className="w-[6px] h-[80px] rounded-sm"
           style={{
-            backgroundColor: "#4c86f9",
+            backgroundColor: "#FA8B02",
             animation: "scale 2s ease-in-out infinite",
           }}
         ></span>
         <span
           className="w-[6px] h-[80px] rounded-sm"
           style={{
-            backgroundColor: "#49a84c",
+            backgroundColor: "#FA8B02",
             animation: "scale 2s ease-in-out infinite",
             animationDelay: "-1.8s",
           }}
@@ -46,7 +46,7 @@ const Loader = () => {
         <span
           className="w-[6px] h-[80px] rounded-sm"
           style={{
-            backgroundColor: "#f6bb02",
+            backgroundColor: "#FA8B02",
             animation: "scale 2s ease-in-out infinite",
             animationDelay: "-1.6s",
           }}
@@ -54,7 +54,7 @@ const Loader = () => {
         <span
           className="w-[6px] h-[80px] rounded-sm"
           style={{
-            backgroundColor: "#f6bb02",
+            backgroundColor: "#FA8B02",
             animation: "scale 2s ease-in-out infinite",
             animationDelay: "-1.4s",
           }}
@@ -62,7 +62,7 @@ const Loader = () => {
         <span
           className="w-[6px] h-[80px] rounded-sm"
           style={{
-            backgroundColor: "#2196f3",
+            backgroundColor: "#FA8B02",
             animation: "scale 2s ease-in-out infinite",
             animationDelay: "-1.2s",
           }}
