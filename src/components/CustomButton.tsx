@@ -19,7 +19,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
     <button
       type={type}
       onClick={onClick}
-      className={`px-14 w-fit mx-auto py-2.5 font-semibold text-[20px] bg-orange text-white rounded-full hover:shadow-xl transition ${className}`}
+      className={`bg-orange font-semibold text-white cursor-pointer px-14 w-fit mx-auto py-2.5  text-[20px]  rounded-full hover:shadow-xl transition ${className}`}
     >
       {label}
     </button>

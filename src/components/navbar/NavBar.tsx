@@ -125,14 +125,14 @@ const NavBar = () => {
           </select>
 
           <button
-            className={clsx("px-3 font-semibold  text-white cursor-pointer",
+            className={clsx("px-3 font-semibold  text-white cursor-pointer ",
               scrolled ? "text-base" : "text-lg lg:text-[20px]")}
             onClick={() => { setAuthType("login"); setModalOpen(true); }}>
             Login
           </button>
 
           <button
-            className={clsx("bg-orange  font-semibold py-2 px-11 rounded-[50px]  text-white cursor-pointer",
+            className={clsx("bg-orange  font-semibold py-2 px-11 rounded-[50px]  text-white cursor-pointer hover:shadow-xl transition",
               scrolled ? "text-base" : "text-lg lg:text-[20px]")}
             onClick={() => { setAuthType("signup"); setModalOpen(true); }}>
             Sign Up
