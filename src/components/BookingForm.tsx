@@ -16,7 +16,7 @@ const BookingForm = () => {
       <Title title="Book Now Bike" />
 
       <div className="bg-white/20 rounded-3xl p-[30px] w-full  lg:w-[734px] ">
-        <form className="flex flex-col lg:flex-row gap-5gi lg:gap-[30px] flex-wrap">
+        <form className="flex flex-col lg:flex-row gap-5 lg:gap-[30px] flex-wrap">
           {BookingFormData.map((data: BookingField & { options?: string[] }, index) => (
             <div key={index} className="flex flex-col gap-2">
               <label className="font-semibold text-lg text-black01">{data.title}</label>
